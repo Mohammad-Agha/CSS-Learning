@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .d1 {
+        background: LightSkyBlue;
+      }
+      .d2 {
+        background: LightSalmon;
+      }
+      .d3 {
+        background: PaleTurquoise;
+      }
+      .d4 {
+        background: LightPink;
+      }
+      .d5 {
+        background: PaleGreen;
+      }
+
+      .container {
+        font-size: 40px;
+        width: 100%;
+        background: LightGray;
+        /* basically changing a container to a grid won't change anything */
+        display: grid;
+        /* this will give your grid 
+        auto: will fill the content left automatically
+        px: relative the resolution of the screen
+        %: adjusts to the percent width of the container
+        fr: (free space to remember it) sets the column/row to a fraction of the available space */
+        grid-template-columns: auto 100px 15% 2fr 1fr;
+        /* this will give your grid three rows that are each 70px wide */
+        grid-template-rows: 120px 120px;
+      }
+    </style>
+    <title>Grid Units</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+  </body>
+</html>
