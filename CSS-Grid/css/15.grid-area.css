@@ -1,0 +1,37 @@
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+
+.item5 {
+  background: PaleGreen;
+}
+.container {
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /* you can group cells of your grid together into an area and give the area a custom name */
+  grid-template-areas:
+    "header header header" /* header will merges the top three cells together */
+    ". content content" /* (.) represents an empty cell, content is merging the last two rows */
+    "footer footer footer"; /* footer will merges the bottom three cells together */
+}
+
+/* after creating the grid-template-areas you can place an item into a custom area by referencing its name */
+.item5 {
+  /* this will place item5 in the footer area taking the last row with 3 columns */
+  grid-area: footer;
+}

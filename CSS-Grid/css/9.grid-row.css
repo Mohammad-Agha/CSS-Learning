@@ -1,0 +1,41 @@
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+
+.item5 {
+  background: PaleGreen;
+}
+.container {
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* grid-row will be applied on a specific child but not on the parent 
+working with grid is more recommended to be debugged on firefox due to its awesome dev tools
+right click, inspect and click on the grid icon of your display: (icon)grid property and you can see
+how the numbers are present on your grid-row.
+*/
+.item5 {
+  /* 1 / 3 basically means span the row from row number 1 to 3
+  3 is excluded so it takes up all the space of row 1 and 2
+  */
+  /* grid-row: 1/4; */
+  grid-row: 2/4;
+  /* grid-row: 3/4; */
+  grid-column: 2/4;
+}

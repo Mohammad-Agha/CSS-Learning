@@ -1,0 +1,42 @@
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+
+.item5 {
+  background: PaleGreen;
+}
+.container {
+  font-size: 40px;
+  min-height: 100px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  /* when the container changes size, this setup keeps inserting 100px columns and stretching them until it can insert another one. Note: If your container can't fit all your items on one row, it will move them down to a new one. 
+  resize the view panel to see the difference between the two containers*/
+  /* auto-fill fills the row with as many columns as it can fit */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+/* change the size of the screen the see the difference */
+.container2 {
+  font-size: 40px;
+  min-height: 100px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  /* auto-fit works almost identically to auto-fill */
+  /* auto-fit fits the currently available columns into the space by expanding them so that they take up any available space */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}

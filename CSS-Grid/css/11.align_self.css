@@ -1,0 +1,38 @@
+.item1 {
+  background: LightSkyBlue;
+}
+.item2 {
+  background: LightSalmon;
+}
+.item3 {
+  background: PaleTurquoise;
+}
+.item4 {
+  background: LightPink;
+}
+
+.item5 {
+  background: PaleGreen;
+}
+.container {
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* align-self will be applied on a specific child but not on the parent 
+  used to align a cell vertically
+  will make the content fill the whole width of the cell
+  stretch is the default value */
+
+.item2 {
+  /* align-self: stretch;  */
+  /* align-self: start; */
+  align-self: center;
+  /* align-self: end; */
+}
