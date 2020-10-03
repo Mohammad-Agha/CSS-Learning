@@ -1,0 +1,46 @@
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container-row__reverse {
+    display: flex;
+    flex-direction: row-reverse; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container-column__reverse {
+    display: flex;
+    flex-direction: column-reverse; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}

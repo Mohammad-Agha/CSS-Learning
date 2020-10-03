@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box; /* padding and margins wont be added to the width */
+}
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+    order: 4; /* here is the change */
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+    order: -1; /* here is the change */
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+    order: 3 /* here is the change */
+}
+
+.b4 {
+    background-color: firebrick;
+    padding: 15px;
+    order: 2; /* here is the change */
+}
+
+.b5 {
+    background-color: goldenrod;
+    padding: 15px;
+    order: 6; /* here is the change */
+}
+
+.b6 {
+    background-color: indigo;
+    padding: 15px;
+    order: 5; /* here is the change */
+}
+
+.container1 {
+    display: flex;
+    padding: 20px;
+    border: 1px solid red;
+}

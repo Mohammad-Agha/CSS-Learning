@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box; /* padding and margins wont be added to the width */
+}
+
+.container1 {
+    display: flex;
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    display: flex;
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container3 {
+    display: flex;
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+    flex-basis: 100px; /* here is the change */
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+    flex-basis: 200px; /* here is the change */
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+    flex-basis: 300px; /* here is the change */
+}
+
+.b4 {
+    background-color: firebrick;
+    padding: 15px;
+    flex-grow: 3; /* here is the change */
+}
+
+.b5 {
+    background-color: goldenrod;
+    padding: 15px;
+    flex-grow: 2; /* here is the change */
+}
+
+.b6 {
+    background-color: indigo;
+    padding: 15px;
+}
+

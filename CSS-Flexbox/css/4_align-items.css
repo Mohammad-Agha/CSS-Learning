@@ -1,0 +1,58 @@
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+}
+
+.container-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    height: 300px; /* added more height so you can see the change */
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    height: 300px; /* added more height so you can see the change */
+}
+
+.container-row__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around; 
+    align-items: baseline; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    height: 300px; /* added more height so you can see the change */
+}
+
+.container-column__reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    height: 300px; /* added more height so you can see the change */
+}

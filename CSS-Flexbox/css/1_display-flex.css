@@ -1,0 +1,20 @@
+.container {
+    display: flex; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+}

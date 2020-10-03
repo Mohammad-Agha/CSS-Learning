@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box; /* padding and margins wont be added to the width */
+}
+.b1 {
+    background-color: dodgerblue;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.b2 {
+    background-color: deeppink;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.b3 {
+    background-color: darkolivegreen;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.b4 {
+    background-color: firebrick;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.b5 {
+    background-color: goldenrod;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.b6 {
+    background-color: indigo;
+    padding: 15px;
+    width: 250px; /* added width to see the change */
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: nowrap; /* here is the change (its the default value) */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap-reverse; /* here is the change */
+    padding: 20px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+}
